@@ -1,0 +1,100 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(Stele2.jpg);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    display:inline-block;
+}
+
+.container1{
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+.item-1{
+    grid-area: 1 / 1 / 5 / 5;
+}
+
+.item-1 img{
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+}
+
+.item-2{
+    grid-area: 2 / 7 / 2 / 8;
+    font-size: 20px;
+    color:white;
+    margin-left:20px;
+}
+
+.item-3{
+    grid-area: 3 / 6 / -1/ -1;
+    color:white
+}
+
+.item-3-inside{
+    display:flex;
+}
+
+.item-3-inside a{
+    font-size:20px;
+    margin-left:40px;
+    text-decoration-line:none;
+    color:white;
+}
+
+.earth{
+    position:relative;
+    width:75px;
+    height:75px;
+    background: #0588e4 url('earth.png');
+    background-size:cover;
+    border-radius: 50%;
+    box-shadow:0 0 50px rgba(0, 0, 0, 0, .85);
+    transition:0.5s;
+    animation:animate 18s linear infinite;
+}
+
+.earth:before{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    overflow: none;
+    background-size:cover;
+    animation: animate 18s linear infinite;
+    z-index: 1;
+}
+
+.earth img{
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.earth:active img{
+    transform: scale(9);
+}
+
+@keyframes animate{
+    0%
+    {
+        background-position: 0px 0;
+    }
+    100%
+    {
+        background-position: 719px 0;
+    }
+    from{left: 0%} to {left: 100%};
+}
+
