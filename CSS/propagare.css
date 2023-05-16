@@ -1,0 +1,18 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-image:url(../Poze/Stele2.jpg);
+    
+}
+
+#box{
+    width:200px;
+    height:200px;
+    border: 2px solid black;
+    text-align:center;
+}
+
+#myBtn{
+    margin-top:80px;
+    font-size:24px;
+}

@@ -1,0 +1,53 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-image:url(../Poze/Stele2.jpg);
+}
+
+.container{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 70px 50px 100px 100px 100px 100px 100px;
+}
+
+.text{
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+.text h1{
+    font-style: bold;
+    justify-content: center;
+    text-align:center;
+}
+
+.caseta{
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.caseta input{
+    width:194px;
+    height:40px;
+}
+
+.buton{
+    grid-area: 2 / 5 / 2 / 6;
+}
+
+.buton input{
+    width:194px;
+    height:45px;
+}
+
+.vizitatori{
+    display:block;
+    grid-area: 3 / 3 / 7 / 7;
+    border:5px;
+    border-style:dashed;
+    border-color: green;
+}
+
+.modificator{
+    font-weight:200;
+    color:brown;
+}

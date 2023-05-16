@@ -1,0 +1,63 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url("../Poze/Stele2.jpg");
+}
+
+.container{
+    display:flex;
+    min-height: 100vh;
+    width:100%;
+}
+
+.grid{
+    display:grid;
+    width:100%;
+    justify-content: center;
+    
+    padding:40px;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+}
+
+.item1{
+    grid-area: 3 / 9 / 4 / -1;
+    visibility: hidden;
+}
+
+.item1 img{
+    width:100%;
+    height:100%;
+}
+
+.item2{
+    grid-area: 2 / 4 / 7 / 8;
+}
+
+.item2 img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+
+.item3{
+    grid-area: 3 / 1 / 4 / 2;
+    visibility: hidden;
+}
+
+.item{
+    font-size:16px;
+    color:#04adc4;
+}
+
+.item4{
+    grid-area: 7 / 4 / 7 / 8;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+}
+
+.item4 h1{
+    color:#04adc4;
+    font-size: 25px;
+}

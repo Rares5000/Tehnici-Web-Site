@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-image: url(Stele2.jpg);
+    background-image: url(../Poze/Stele2.jpg);
     display:flex;
     justify-content: center;
     align-items:center;
@@ -55,7 +55,7 @@ body{
     position:relative;
     width:75px;
     height:75px;
-    background: #0588e4 url('earth.png');
+    background: #0588e4 url('../Poze/earth.png');
     background-size:cover;
     border-radius: 50%;
     transition:0.5s;
